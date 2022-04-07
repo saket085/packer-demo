@@ -1,3 +1,4 @@
+{
   "builders": [{
     "type": "amazon-ebs",
     "role_arn"    :  "arn:aws:iam::742818135316:role/jenkins-role",
