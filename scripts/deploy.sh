@@ -5,6 +5,8 @@ apt-get install -y nginx nodejs npm
 groupadd node-demo
 useradd -d /app -s /bin/false -g node-demo node-demo
 
+pwd
+ll
 mv /tmp/app /app
 chown -R node-demo:node-demo /app
 
@@ -30,7 +32,7 @@ http {
 
 service nginx restart
 
-cd ~/app
+cd /app
 npm install
 
 echo '[Service]
