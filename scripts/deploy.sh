@@ -7,7 +7,7 @@ useradd -d /app -s /bin/false -g node-demo node-demo
 
 pwd
 ll
-mv tmp/app/ /app
+mv app/ /app
 chown -R node-demo:node-demo /app
 
 echo 'user www-data;
