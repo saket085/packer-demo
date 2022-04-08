@@ -10,6 +10,8 @@ ls
 ls -l /tmp
 mv tmp/app/ /app
 chown -R node-demo:node-demo /app
+cd /tmp
+ls
 
 echo 'user www-data;
 worker_processes auto;
