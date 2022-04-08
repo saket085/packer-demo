@@ -30,7 +30,7 @@ http {
 
 service nginx restart
 
-cd /app
+cd ~/app
 npm install
 
 echo '[Service]
