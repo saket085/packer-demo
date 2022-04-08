@@ -1,17 +1,15 @@
 #!/bin/bash
-apt-get update
-apt-get install -y nginx nodejs npm
+#apt-get update
+#apt-get install -y nginx nodejs npm
+
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+apt-get install -y nginx nodejs
 
 groupadd node-demo
 useradd -d /app -s /bin/false -g node-demo node-demo
 
-pwd
-ls
-ls -l /tmp
-mv tmp/app/ /app
+mv /tmp/app/ /app
 chown -R node-demo:node-demo /app
-cd /tmp
-ls
 
 echo 'user www-data;
 worker_processes auto;
